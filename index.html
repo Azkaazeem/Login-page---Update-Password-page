@@ -15,219 +15,13 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    <link  href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
     <link rel="shortcut icon" href="imgs/01- LOGO.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        /* ------- SAME FAMILY STYLING LIKE FORGET PAGE -------- */
-
-        /* .update-container {
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #f5f6f7;
-        }
-
-        .update-box {
-            width: 100%;
-            max-width: 380px;
-            background: white;
-            padding: 35px 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
-            text-align: center;
-            animation: slideDown 1s ease-out forwards;
-        }
-
-        .update-box h2 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 5px;
-        }
-
-        .update-box p {
-            font-size: 13px;
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        .input-grp {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .input-grp label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: #333;
-            font-size: 14px;
-        }
-
-        .input-grp input {
-            width: 100%;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border: 1px solid transparent;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .input-grp input:focus {
-            border-color: #003b46;
-            background-color: #fff;
-        }
-
-        .password-input {
-            position: relative;
-        }
-
-        .toggle-password {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #aaa;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            width: 100%;
-            padding: 12px;
-            font-size: 15px;
-            background: #003b46 !important;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .back-login {
-            display: block;
-            margin-top: 18px;
-            font-size: 14px;
-            color: #003b46;
-            text-decoration: none;
-        } */
-
-        .update-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #f4f7f8, #eef2f3);
-}
-
-.update-box {
-    width: 100%;
-    max-width: 380px;
-    background: #ffffff;
-    padding: 40px 42px;
-    border-radius: 14px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
-    text-align: center;
-    animation: slideDown 0.9s ease-out forwards;
-}
-
-.update-box h2 {
-    font-size: 25px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 4px;
-    letter-spacing: 0.3px;
-}
-
-.update-box p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 28px;
-}
-
-/* INPUT */
-.input-grp {
-    margin-bottom: 22px;
-    text-align: left;
-}
-
-.input-grp label {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 7px;
-    display: block;
-}
-
-.password-input {
-    position: relative;
-}
-
-.password-input input {
-    width: 100%;
-    padding: 15px 18px;
-    background: #f7f9fa;
-    border: 1px solid #e2e5e7;
-    border-radius: 10px;
-    font-size: 15px;
-    transition: all .3s ease;
-}
-
-.password-input input:focus {
-    border-color: #003b46;
-    background: #ffffff;
-    box-shadow: 0 0 0 4px rgba(0, 59, 70, 0.10);
-}
-
-.toggle-password {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-/* BUTTON */
-.btn-primary {
-    width: 100%;
-    padding: 13px;
-    background: #003b46 !important;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    transition: 0.3s ease;
-}
-
-.btn-primary:hover {
-    background: #022e36 !important;
-    transform: translateY(-2px);
-    box-shadow: 0 7px 18px rgba(0, 59, 70, 0.30);
-}
-
-/* LINK */
-.back-login {
-    margin-top: 18px;
-    font-size: 14px;
-    color: #003b46;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.back-login:hover {
-    color: #022e36;
-    text-decoration: underline;
-}
-
-    </style>
+   
 </head>
 
 <body>
@@ -242,39 +36,28 @@
             <div class="input-grp password-grp">
                 <label for="password">New Password</label>
                 <div class="password-input">
-                    <input type="password" id="password" placeholder="Enter new password">
-                    <i class="fa-solid fa-eye-slash toggle-password" id="togglePass"></i>
+                    <input type="password" id="newPass" placeholder="Enter new password">
+                    <i class="fa-solid fa-eye-slash toggle-password" data-target="newPass"></i>
+                </div>
+            </div>
+
+            <div class="input-grp password-grp">
+                <label for="password">Confirm Password</label>
+                <div class="password-input">
+                    <input type="password" id="confirmPass" placeholder="Enter new password">
+                    <i class="fa-solid fa-eye-slash toggle-password" data-target="confirmPass"></i>
                 </div>
             </div>
 
             <button class="btn-primary" id="updatePassBtn">Update Password</button>
-
-            <a class="back-login" href="index.html">← Back to Login</a>
-
+           
         </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        // SHOW/HIDE PASSWORD TOGGLE
-        const toggle = document.getElementById("togglePass");
-        const password = document.getElementById("password");
-
-        toggle.addEventListener("click", () => {
-            if (password.type === "password") {
-                password.type = "text";
-                toggle.classList.remove("fa-eye-slash");
-                toggle.classList.add("fa-eye");
-            } else {
-                password.type = "password";
-                toggle.classList.remove("fa-eye");
-                toggle.classList.add("fa-eye-slash");
-            }
-        });
-    </script>
+    <script type="module" src="app.js"></script>
 
 </body>
 
