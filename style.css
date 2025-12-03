@@ -25,6 +25,7 @@
         opacity: 0;
         transform: translateX(-80px) scale(1.06);
     }
+
     to {
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -119,4 +120,11 @@
 .back-login:hover {
     color: #022e36;
     text-decoration: underline;
+}
+
+/* Swal Customization */
+
+.glass-alert {
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
 }
